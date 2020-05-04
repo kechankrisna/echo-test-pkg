@@ -1,0 +1,18 @@
+{
+    "name": "whitehat/echo-test-pkg",
+    "description": "whitehat/echo-test-pkg with no alert",
+    "authors": [
+        {
+            "name": "kechankrisna",
+            "email": "ke.chankrisna168@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "echolib": "src/"
+        }
+    }
+}
