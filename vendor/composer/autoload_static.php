@@ -17,6 +17,10 @@ class ComposerStaticInit56995b68c68d9052c791c78f62618b48
         array (
             'phpDocumentor\\Reflection\\' => 25,
         ),
+        'e' => 
+        array (
+            'echolib\\' => 8,
+        ),
         'W' => 
         array (
             'Webmozart\\Assert\\' => 17,
@@ -43,6 +47,10 @@ class ComposerStaticInit56995b68c68d9052c791c78f62618b48
             1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
             2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
         ),
+        'echolib\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
+        ),
         'Webmozart\\Assert\\' => 
         array (
             0 => __DIR__ . '/..' . '/webmozart/assert/src',
@@ -62,16 +70,6 @@ class ComposerStaticInit56995b68c68d9052c791c78f62618b48
         'DeepCopy\\' => 
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
-        ),
-    );
-
-    public static $prefixesPsr0 = array (
-        'e' => 
-        array (
-            'echolib' => 
-            array (
-                0 => __DIR__ . '/../..' . '/src',
-            ),
         ),
     );
 
@@ -742,6 +740,7 @@ class ComposerStaticInit56995b68c68d9052c791c78f62618b48
         'TheSeer\\Tokenizer\\TokenCollectionException' => __DIR__ . '/..' . '/theseer/tokenizer/src/TokenCollectionException.php',
         'TheSeer\\Tokenizer\\Tokenizer' => __DIR__ . '/..' . '/theseer/tokenizer/src/Tokenizer.php',
         'TheSeer\\Tokenizer\\XMLSerializer' => __DIR__ . '/..' . '/theseer/tokenizer/src/XMLSerializer.php',
+        'echolib\\EchoClass' => __DIR__ . '/../..' . '/src/echolib/EchoClass.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
@@ -749,7 +748,6 @@ class ComposerStaticInit56995b68c68d9052c791c78f62618b48
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit56995b68c68d9052c791c78f62618b48::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit56995b68c68d9052c791c78f62618b48::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit56995b68c68d9052c791c78f62618b48::$prefixesPsr0;
             $loader->classMap = ComposerStaticInit56995b68c68d9052c791c78f62618b48::$classMap;
 
         }, null, ClassLoader::class);

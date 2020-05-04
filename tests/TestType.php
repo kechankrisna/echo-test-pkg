@@ -1,59 +1,18 @@
 <?php
-// namespace TestType;
-
+declare (strict_types = 1);
+require_once './vendor/autoload.php';
 use PHPUnit\Framework\TestCase;
-
-require_once __DIR__ . '/../vendor/autoload.php'; // Autoload files using Composer autoload
-
-// function assertTrueOrFalse($actual, $expected, $message = "")
-// {
-//     if ($actual != $expected) {
-//         if ($message != null) {
-//             echo $message;
-//             return;
-//         }
-//         echo "actual = $actual\n";
-//         echo "expected  = $expected \n";
-//         return;
-//     } else {
-//         echo "Done!\n";
-//     }
-// }
-
-// class TryTest extends TestCase
-// {
-//     public  function testMethod()
-//     {
-//         $this->assertSame(EchoClass::toBool(1), false);
-//     }
-// }
-// $i = 1;
-// assertTrueOrFalse(++$i, 2);
 
 class TestType extends TestCase
 {
-    public function testCanBeCreatedFromValidEmailAddress(): void
+    public function testPushAndPop()
     {
-        // $this->assertInstanceOf(
-        //     Email::class,
-        //     Email::fromString('user@example.com')
-        // );
+        $this->assertEquals(echolib\EchoClass::toBool(1), true);
         $i = 1;
-        $this->assertEquals(++$i, 22);
-    }
-
-    public function testCannotBeCreatedFromInvalidEmailAddress(): void
-    {
-        // $this->expectException(InvalidArgumentException::class);
-
-        // Email::fromString('invalid');
-    }
-
-    public function testCanBeUsedAsString(): void
-    {
-        // $this->assertEquals(
-        //     'user@example.com',
-        //     Email::fromString('user@example.com')
-        // );
+        $this->assertEquals($i, 1);
+        // echo '>>>>>>>>>'+  echolib\EchoClass::toBool(1);
+        // echo '\n';
+        
+        
     }
 }
