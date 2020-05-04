@@ -12,7 +12,6 @@ class TestType extends TestCase
         $this->assertEquals($i, 1);
         // echo '>>>>>>>>>'+  echolib\EchoClass::toBool(1);
         // echo '\n';
-        
-        
+
     }
 }
